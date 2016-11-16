@@ -1,0 +1,25 @@
+{
+  "name": "newlean_admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp": "^3.9.1",
+    "gulp-dev": "^0.3.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sallon/keyPowerPlus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sallon/keyPowerPlus/issues"
+  },
+  "homepage": "https://github.com/sallon/keyPowerPlus#readme",
+  "description": ""
+}

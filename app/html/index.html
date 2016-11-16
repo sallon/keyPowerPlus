@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企力|Key Power Plus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="canvasbg" id="canvasbg"></div>
+    <script src="../static/bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/canvasBackground.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#canvasbg").drawBackground({
+                //需要绘制的宽度
+                width:$(window).width(),
+                //需要绘制的高度
+                height:$(window).height(),
+                imgs:{
+
+                },
+                //圆圈的颜色
+                circleColor:"#FFFFFF",
+                //切换时间
+                changeTime:3000
+                //切换的方式：slide，
+
+            })
+        })
+    </script>
+</div>
+</body>
+</html>
