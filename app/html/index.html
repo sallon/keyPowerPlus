@@ -4,32 +4,140 @@
     <meta charset="UTF-8">
     <title>企力|Key Power Plus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <link rel="stylesheet" href="../static/images/icon/iconfont.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
-<body>
-<div class="container-fluid">
-    <div class="canvasbg" id="canvasbg"></div>
+<body style="width: 100%;">
+    <div class="canvasbg" id="canvasbg">
+       <div style="display: none">
+           <video id="bgVideo"
+                  poster="../static/images/index/5636a92ad0492_1024.jpg" autoplay="true" loop="true" autobuffer controls>
+               <source src="../static/images/index/5636a9178deec.mov">
+               <source src="../static/images/index/5636a9178deec.ogv">
+           </video>
+       </div>
+        <canvas id="background"></canvas>
+        <div class="flagText">
+            <img src="../static/images/index/name.png">
+            <p>企业级项目计划、执行、追踪、考核管理平台  协作任务用企力，企业协助更高效  内部任务用企力，让任务必达，任务进度清晰掌握</p>
+            <a class="btn btn-info btn-lg">开始体验</a>
+        </div>
+    </div>
+    <div class="nav">
+        <a class="logo">
+            <img src="../static/images/index/logo_1.png">
+        </a>
+        <ul class="leftNav">
+            <li>
+                <a href="javascript:void(0);" class="navItem active">首页</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navItem">产品</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navItem">价格</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navItem">案例</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navItem">联系我们</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navBtn">登录</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="navBtn">注册</a>
+            </li>
+        </ul>
+    </div>
+    <div class="model piBox">
+        <div class="pi">
+            <div class="pi_icon"><i class="iconfont icon-anquan"></i></div>
+            <p class="pi_name">安全</p>
+            <p class="pi_info">2015年起，百万级企业的信赖</p>
+        </div>
+        <div class="pi">
+            <div class="pi_icon"><i class="iconfont icon-free"></i></div>
+            <p class="pi_name">免费</p>
+            <p class="pi_info">2016年起，不限应用不限人数，不限时间</p>
+        </div>
+        <div class="pi">
+            <div class="pi_icon"><i class="iconfont icon-gaoxiao"></i></div>
+            <p class="pi_name">高效</p>
+            <p class="pi_info">从使用企力开始</p>
+        </div>
+    </div>
+    <div class="model">
+        <div class="pt_text"><span>专业管理应用   承载企业经营管理全领域业务-为您提供了协作的一切</span></div>
+        <p class="pt_info">为企业人力资源、行政、财务、生产研发、销售、服务各经营管理领域提供专业应用，功能强大，有促进效率及业绩提升</p>
+    </div>
+    <div class="model">
+        <div class="pl">
+            <div class="pl_item">
+                <i class="iconfont icon-renwu"></i>
+                <p>任务管理</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-xiangmuguanli"></i>
+                <p>项目管理</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-tongxunlu"></i>
+                <p>通讯录</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-jixiaoguanli"></i>
+                <p>绩效管理</p>
+            </div>
+        </div>
+        <div class="pl">
+            <div class="pl_item">
+                <i class="iconfont icon-shenpiguanli"></i>
+                <p>审批管理</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-crm"></i>
+                <p>CRM</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-kaoqinguanli"></i>
+                <p>考勤管理</p>
+            </div>
+            <div class="pl_item">
+                <i class="iconfont icon-xuexiguanli"></i>
+                <p>学习管理</p>
+            </div>
+        </div>
+        <div class="pl_btn_box">
+            <a class="pl_btn">查看详细功能介绍</a>
+        </div>
+    </div>
+    <div class="model">
+        <div class="pt_text"><span>更低的投入 更高的回报 让企力便利惠及所有企业</span></div>
+    </div>
+    <div class="model adv">
+        <img src="../static/images/index/a1.jpg">
+    </div>
+    <div class="model">
+        <div class="pt_text"><span>跨企业协同平台</span></div>
+    </div>
+    <div class="model adv">
+        <img src="../static/images/index/a2.jpg">
+    </div>
+    <div class="model">
+        <div class="pt_text"><span>已经被应用于超过十个行业的逾一百万项目中</span></div>
+    </div>
+    <div class="model adv">
+        <img src="../static/images/index/a3.jpg">
+    </div>
     <script src="../static/bootstrap/js/jquery-3.1.1.min.js"></script>
     <script src="../static/js/canvasBackground.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#canvasbg").drawBackground({
-                //需要绘制的宽度
-                width:$(window).width(),
-                //需要绘制的高度
-                height:$(window).height(),
-                imgs:{
-
-                },
-                //圆圈的颜色
-                circleColor:"#FFFFFF",
-                //切换时间
-                changeTime:3000
-                //切换的方式：slide，
-
-            })
+    <script>
+        $(function(){
+            $("#canvasbg").drawBackground()
         })
     </script>
-</div>
 </body>
 </html>

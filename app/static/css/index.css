@@ -1,0 +1,67 @@
+html, body { padding: 0px; margin: 0px; }
+
+.iconfont { font-size: inherit; line-height: 1; }
+
+.canvasbg { position: relative; overflow: hidden; clear: both; width: 100%; height: 100%; }
+
+.canvasbg canvas { position: absolute; top: 0px; left: 0px; z-index: 1; }
+
+.canvasbg .flagText { position: absolute; z-index: 2; color: #fff; width: 465px; height: 365px; top: 30%; left: 20%; font-size: 20px; line-height: 2; }
+
+.canvasbg .flagText img { clear: both; overflow: hidden; width: 80%; display: block; }
+
+.canvasbg .flagText .btn { width: 160px; }
+
+.nav { width: 100%; position: fixed; top: 0px; left: 0px; z-index: 10; padding: 0px 36px; margin-top: 42px; }
+
+.nav .leftNav { float: right; list-style: none; }
+
+.nav .leftNav li { float: left; padding: 0px 20px; }
+
+.nav .leftNav li .navItem { color: #fff; font-size: 18px; display: inline-block; overflow: hidden; position: relative; line-height: 2; }
+
+.nav .leftNav li .navItem:hover, .nav .leftNav li .navItem.active { text-decoration: none; }
+
+.nav .leftNav li .navItem:hover:after, .nav .leftNav li .navItem.active:after { content: ""; height: 2px; position: absolute; background-color: #fff; width: 100%; bottom: 0px; display: block; left: 0px; }
+
+.nav .leftNav li .navBtn { width: 70px; height: 40px; font-size: 16px; color: #fff; border: 1px solid #fff; display: block; text-align: center; line-height: 40px; border-radius: 5px; }
+
+.nav .leftNav li .navBtn:hover { background-color: #fff; color: #55b9fe; text-decoration: none; }
+
+.model { max-width: 1200px; margin: 0 auto; clear: both; }
+
+.piBox { display: flex; -webkit-flex: 1; display: -webkit-flex; padding: 50px 0px; }
+
+.piBox .pi { flex-grow: 1; text-align: center; }
+
+.piBox .pi .pi_icon { width: 150px; height: 150px; line-height: 150px; text-align: center; display: block; margin: 20px auto; font-size: 70px; border-radius: 100%; border: 1px solid #ddd; color: #959595; }
+
+.piBox .pi .pi_name { font-size: 30px; color: #666666; line-height: 2; }
+
+.piBox .pi .pi_info { font-size: 14px; color: #888; }
+
+.pt_text { text-align: center; display: flex; display: -webkit-flex; flex: 1; }
+
+.pt_text::before, .pt_text::after { content: ""; height: 1px; background-color: #ddd; flex-grow: 1; margin-top: 22px; }
+
+.pt_text span { flex-grow: 1; font-size: 30px; }
+
+.pt_info { font-size: 14px; line-height: 2; text-align: center; color: #999999; }
+
+.pl { clear: both; overflow: hidden; display: flex; display: -webkit-flex; justify-content: center; padding: 30px 0px 0px; flex: 1; }
+
+.pl .pl_item { width: 150px; height: 120px; text-align: center; }
+
+.pl .pl_item .iconfont { font-size: 50px; line-height: 1.5; color: #3ebdff; }
+
+.pl .pl_item p { font-size: 14px; color: #333; }
+
+.pl_btn_box { padding: 30px; text-align: center; margin-bottom: 40px; }
+
+.pl_btn_box .pl_btn { color: #3ebdff; border: 1px solid #3ebdff; display: inline-block; padding: 12px 50px; }
+
+.pl_btn_box .pl_btn:hover { background-color: #3ebdff; color: #fff; text-decoration: none; cursor: pointer; }
+
+.adv { padding: 50px; text-align: center; }
+
+.adv img { max-width: 1000px; }
