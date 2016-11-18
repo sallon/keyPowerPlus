@@ -3,6 +3,9 @@ html,body{
   padding: 0px;
   margin: 0px;
 }
+a{
+  text-decoration: none;
+}
 .iconfont{
   font-size: inherit;
   line-height: 1;
@@ -49,6 +52,12 @@ html,body{
   z-index: 10;
   padding: 0px 36px;
   margin-top: 42px;
+  .logo{
+    width: 52px;
+    height: 34px;
+    background-image: url("../images/index/logo_1.png");
+    float: left;
+  }
   .leftNav{
     float: right;
     list-style: none;
@@ -93,6 +102,38 @@ html,body{
         }
       }
     }
+  }
+  &.whiteFixed{
+    background-color: #fff;
+    top:0px;
+    height: 70px;
+    margin-top: 0px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    .logo{
+      margin-top: 20px;
+      background-image: url("../images/index/logo_2.png");
+    }
+    .leftNav{
+      margin-top: 20px;
+      a{
+        color: #999;
+        &:hover,&.active{
+          color: #22a0db;
+          &:after{
+            background-color: #22a0db;
+          }
+        }
+      }
+      .navBtn{
+        color: #22a0db;
+        border: 1px solid #22a0db;
+        &:hover{
+          color: #fff;
+          background-color: #22a0db;
+        }
+      }
+    }
+
   }
 }
 .model{
@@ -199,5 +240,89 @@ html,body{
   text-align: center;
   img{
     max-width: 1000px;
+  }
+}
+.footer{
+  clear: both;
+  overflow: hidden;
+  .ft{
+    height: 225px;
+    background-image: url("../images/index/foot1.jpg");
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    .ft_text{
+      font-size: 24px;
+      padding: 40px;
+    }
+    .registBtn{
+      font-size: 16px;
+      display: inline-block;
+      border: 2px solid #fff;
+      width: 198px;
+      height: 48px;
+      text-align: center;
+      line-height: 48px;
+      border-radius: 5px;
+      color: #fff;
+      &:hover{
+        background-color: #fff;
+        color: #3ebdff;
+        text-decoration: none;
+      }
+    }
+  }
+  .fb{
+    height: 225px;
+    background-image: url("../images/index/foot2.jpg");
+    color: #fff;
+    background-position: center;
+    .fb_c{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      display: -webkit-flex;
+      flex: 1;
+      .fb_item{
+        list-style: none;
+        padding-top: 30px;
+        flex-grow: 1;
+        text-align: left;
+        .fb_title{
+          font-size: 18px;
+          line-height: 2;
+          position: relative;
+          overflow: hidden;
+          &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            height: 2px;
+            width: 200px;
+            border-bottom: 2px solid rgba(255,255,255,0.5);
+          }
+        }
+        .fb_i{
+          line-height: 2;
+          a{
+            font-size: 14px;
+            color: #fff;
+          }
+          img{
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+.innerpageContainer{
+  padding-top: 70px;
+  .aboutImg{
+    min-width: 1200px;
+    height: 398px;
+    background-image: url("../images/index/about.jpg");
+    background-position: center;
   }
 }

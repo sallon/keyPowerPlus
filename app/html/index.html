@@ -24,9 +24,9 @@
             <a class="btn btn-info btn-lg">开始体验</a>
         </div>
     </div>
-    <div class="nav">
+    <div id="nav" class="nav">
         <a class="logo">
-            <img src="../static/images/index/logo_1.png">
+            <!--<img src="../static/images/index/logo_1.png">-->
         </a>
         <ul class="leftNav">
             <li>
@@ -132,11 +132,57 @@
     <div class="model adv">
         <img src="../static/images/index/a3.jpg">
     </div>
+    <div class="footer">
+        <div class="ft">
+            <p class="ft_text">现在就开始使用企力</p>
+            <a class="registBtn">立即注册</a>
+        </div>
+        <div class="fb">
+            <div class="fb_c">
+                <ul class="fb_item">
+                    <li class="fb_title">产品</li>
+                    <li class="fb_i"><a href="javascript:void(0);">价格</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">案例</a></li>
+                </ul>
+                <ul class="fb_item">
+                    <li class="fb_title">公司</li>
+                    <li class="fb_i"><a href="javascript:void(0);">关于我们</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">联系我们</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">新闻与活动</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">团队介绍</a></li>
+                </ul>
+                <ul class="fb_item">
+                    <li class="fb_title">支持</li>
+                    <li class="fb_i"><a href="javascript:void(0);">使用指南</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">隐私条款</a></li>
+                </ul>
+                <ul class="fb_item">
+                    <li class="fb_title">联系方式</li>
+                    <li class="fb_i"><a href="javascript:void(0);">+86 400-060-5576</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">周一至周日 8：00～20：00</a></li>
+                    <li class="fb_i"><a href="javascript:void(0);">support@qili.com</a></li>
+                </ul>
+                <ul class="fb_item">
+                    <li class="fb_title">关注微信号</li>
+                    <li class="fb_i">
+                        <img src="../static/images/index/qrod.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="../static/bootstrap/js/jquery-3.1.1.min.js"></script>
     <script src="../static/js/canvasBackground.js"></script>
     <script>
         $(function(){
-            $("#canvasbg").drawBackground()
+            $("#canvasbg").drawBackground();
+            $(window).scroll(function(e){
+                if($("body").scrollTop() > 300){
+                    $("#nav").addClass("whiteFixed")
+                }else{
+                    $("#nav").removeClass("whiteFixed")
+                }
+            })
         })
     </script>
 </body>
